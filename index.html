@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Toogle Button</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/toogle.css?v=1" type="text/css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.2.js"></script>
+        <script type="text/javascript" src="js/toogle.js?v=1"></script>
+        <script>
+            function printValue(inputId,value) {
+               document.getElementById(inputId+"Text").innerHTML="Value --> "+value;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Toogle Button Example</h1>
+        <table>
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input id="triButtonAnyName"
+                               name="triButtonAnyName" type="text" 
+                               value="P" class="tri-toggle-input"  onchange="printValue(this.id,this.value)"
+                               >
+                    </td>
+                    <td>
+                        <div id="triButtonAnyNameText"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="doubleButtonAnyName"
+                               name="doubleButtonAnyName" type="text" 
+                               class="double-toggle-input" 
+                               onchange="printValue(this.id,this.value)"
+                               >
+                    </td>
+                    <td>
+                        <div id="doubleButtonAnyNameText"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div>
+                            Thanks.. 
+                            Design By Nitesh Kumar
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
